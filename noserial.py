@@ -1,4 +1,3 @@
-
 import cv2
 import argparse
 import numpy as np
@@ -62,7 +61,7 @@ def draw_prediction(img, class_id, confidence, x, y, x_plus_w, y_plus_h):
             print("bottom left")
         elif(xv>0 and yv>0):
             print("bottom right")
-    '''
+        '''
        # cv2.circle(img,(xv,yv),5,(255,0,0),-1)
         cv2.putText(img, label, (x-10,y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2)
         cv2.putText(img, conf, (x+20,y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,255), 2)
